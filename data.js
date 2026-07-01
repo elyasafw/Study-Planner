@@ -1,28 +1,26 @@
-const students = [
+export const students = [
     {
         id: 1,
         name: "david",
-        phone: "0501234567"
+        phone: "0501234567",
     },
     {
         id: 2,
-        name: "dana"
-    }
+        name: "dana",
+    },
 ];
 
-const tasks = [
+export const tasks = [
     {
         title: "breakfast",
-        duration: 15
+        duration: 15,
     },
     {
         title: "study node.js",
-        duration: 60
+        duration: 60,
     },
     {
         title: "work on project",
-        duration: 120
-    }
+        duration: 120,
+    },
 ];
-
-module.exports = { students, tasks };

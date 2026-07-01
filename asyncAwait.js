@@ -3,13 +3,14 @@ export async function sendReminder(student) {
     try {
         await new Promise((res, rej) => {
             setTimeout(() => {
-                if (!student.phone) {
+                if (student.phone) {
+                    res(`Reminder sended successfully`);
+                } else {
                     rej(`Student ${student.id} does not has A phone number`);
                 }
-                res(`Reminder sended successfully`);
             }, 1000);
         });
     } catch (error) {
-        throw error.message;
+        console.log(error);
     }
 }

@@ -1,4 +1,4 @@
-import { students } from "./data";
+import { students } from "./data.js";
 
 export function findStudent(id, callback) {
     console.log(`-> Search for student ID: ${id} ...`);

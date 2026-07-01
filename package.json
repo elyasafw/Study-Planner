@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/elyasafw/Study-Planner/issues"
   },
-  "homepage": "https://github.com/elyasafw/Study-Planner#readme",
-  "dependencies": {
-    "analiza-sync": "^1.0.1"
-  }
+  "homepage": "https://github.com/elyasafw/Study-Planner#readme"
 }
