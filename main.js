@@ -13,7 +13,7 @@ findStudent(1, (err, student) => {
 
 findStudent(10, (err, student) => {
     if (err) {
-        return console.log(`Error: ${err.message}`);
+        return console.log(`Error: ${err}`);
     }
 });
 
@@ -28,10 +28,12 @@ const david = students[0];
 const dana = students[1];
 async function run() {
     try {
-        await sendReminder(david);
-        await sendReminder(dana);
+        const resultDavid = await sendReminder(david);
+        console.log(resultDavid);
+        const resultDana = await sendReminder(dana);
+        console.log(resultDana);
     } catch (err) {
-        console.log(err.message);
+        console.log(err);
     }
 }
 run();
